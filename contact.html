@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mAI Teacher - Contact</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div id="loader-overlay" class="hidden">
+        <div class="spinner"></div>
+    </div>
+
+
+    <nav id="main-nav">
+        <div class="logo">
+            <a href="index.html"><img src="DocImgs/Logo.png" alt="Logo mAI Teacher"></a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="nav-item">Accueil</a></li>
+            <li><a href="about.html" class="nav-item">À Propos</a></li>
+            <li><a href="services.html" class="nav-item">Produits/Services</a></li>
+            <li><a href="team.html" class="nav-item">L'Équipe</a></li>
+            <li><a href="contact.html" class="nav-item active">Contact</a></li>
+            <li><a href="map.html" class="nav-item">Nous Trouver</a></li>
+        </ul>
+        <div class="time-trackers">
+            <span id="real-time-clock">00:00:00</span>
+            <span id="page-stopwatch">00:00</span>
+        </div>
+    </nav>
+
+    <main>
+        <section class="contact-section">
+            <h2>Infos et contact</h2>
+            <p class="contact-lead">Contactez le responsable de l'équipe : <br>
+                <strong>Maher Jridi - maher.jridi[at]isen-ouest.yncrea.fr</strong>
+            </p>
+            <div id="form-container">
+                <form id="contact-form">
+                    <div class="input-group">
+                        <label for="fullname">👤 Prénom Nom</label>
+                        <input type="text" id="fullname" name="fullname" placeholder="Prénom Nom">
+                        <span id="error-name" class="error-msg"></span>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="email">📧 Email</label>
+                        <input type="text" id="email" name="email" placeholder="email@example.com">
+                        <span id="error-email" class="error-msg"></span>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="message">📝 Votre message (1000 caractères maximum)</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Votre message..."></textarea>
+                        <span id="error-message" class="error-msg"></span>
+                    </div>
+
+                    <button type="submit" id="submit-btn" disabled>Envoyer</button>
+                </form>
+            </div>
+
+
+            <div id="game-container" class="hidden" style="text-align: center; margin-top: 20px;">
+                <h3>Défiez l'IA pour envoyer votre message !</h3>
+                <p>Remportez la partie pour valider l'envoi.</p>
+                <div style="max-width: 100%; overflow-x: auto;">
+                    <canvas id="mini-game-canvas" width="400" height="400" style="max-width: 100%; height: auto;"></canvas>
+                </div>
+                <div id="game-result"></div>
+            </div>
+
+
+            <div id="success-message" class="hidden">
+                <h3 style="color: green;">Votre message a bien été envoyé !</h3>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>ISEN Yncréa Ouest - Campus de Nantes</p>
+            <p>Adresse : 35 Avenue du Champ de Manœuvres, 44470 Carquefou</p>
+            <p>Téléphone : <span id="school-phone" class="footer-link">+33 2 40 18 12 12</span></p>
+            <p>Email : <a href="mailto:maher.jridi@isen-ouest.yncrea.fr" class="footer-link">maher.jridi@isen-ouest.yncrea.fr</a></p>
+        </div>
+    </footer>
+
+<script src="js/scrypt.js"></script>
+<script src="js/contact.js"></script>
+</body>
+
+</html>

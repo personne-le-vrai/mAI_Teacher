@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mAI Teacher - Accueil</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="loader-overlay" class="hidden">
+        <div class="spinner"></div>
+    </div>
+
+    <nav id="main-nav">
+        <div class="logo">
+            <a href="index.html">
+                <img src="DocImgs/Logo.png" alt="Logo mAI Teacher">
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="nav-item active">Accueil</a></li>
+            <li><a href="about.html" class="nav-item">À Propos</a></li>
+            <li><a href="services.html" class="nav-item">Produits/Services</a></li>
+            <li><a href="team.html" class="nav-item">L'Équipe</a></li>
+            <li><a href="contact.html" class="nav-item">Contact</a></li>
+            <li><a href="map.html" class="nav-item">Nous Trouver</a></li>
+        </ul>
+        <div class="time-trackers">
+            <span id="real-time-clock">00:00:00</span>
+            <span id="page-stopwatch">00:00</span>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero-section">
+            <img src="DocImgs/Banner.png" alt="Bannière mAI Teacher" class="zoom-banner">
+            <h1 id="slogan-text">L'IA au service de votre réussite universitaire.</h1>
+        </section>
+
+        <section class="presentation">
+            <h2>Bienvenue sur mAI Teacher</h2>
+            <p>Votre tuteur intelligent personnalisé, conçu pour vous accompagner dans les matières scientifiques
+                (Maths, Physique) et la gestion de la vie étudiante. Retrouvez des cours, des exercices et un
+                accompagnement sur-mesure.</p>
+            <div class="video-container">
+                <iframe id="rick" width="560" height="315" src="https://youtu.be/LCIqe61nHfg" 
+                    title="YouTube video player" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section class="news-feed">
+            <h2>Fils d'actualités</h2>
+            <ul>
+                <li><strong>15/05/2026 :</strong> Lancement officiel de la plateforme mAI Teacher pour les étudiants
+                    universitaires.</li>
+                <li><strong>20/05/2026 :</strong> Nouveau module de gestion du stress disponible dans l'espace
+                    bien-être.</li>
+                <li><strong>25/05/2026 :</strong> Intégration des nouvelles ressources en mathématiques avancées en
+                    collaboration avec nos partenaires.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>ISEN Yncréa Ouest - Campus de Nantes</p>
+            <p>Adresse : 35 Avenue du Champ de Manœuvres, 44470 Carquefou</p>
+            <p>Téléphone : <span id="school-phone" class="footer-link">+33 2 40 18 12 12</span></p>
+            <p>Email : <a href="mailto:maher.jridi@isen-ouest.yncrea.fr"
+                    class="footer-link">maher.jridi@isen-ouest.yncrea.fr</a></p>
+        </div>
+    </footer>
+    <script src="js/scrypt.js"></script>
+</body>
+
+</html>

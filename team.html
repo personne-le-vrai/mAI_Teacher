@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mAI Teacher - L'Équipe</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div id="loader-overlay" class="hidden">
+        <div class="spinner"></div>
+    </div>
+
+
+    <nav id="main-nav">
+        <div class="logo">
+            <a href="index.html"><img src="DocImgs/Logo.png" alt="Logo mAI Teacher"></a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="nav-item">Accueil</a></li>
+            <li><a href="about.html" class="nav-item">À Propos</a></li>
+            <li><a href="services.html" class="nav-item">Produits/Services</a></li>
+            <li><a href="team.html" class="nav-item active">L'Équipe</a></li>
+            <li><a href="contact.html" class="nav-item">Contact</a></li>
+            <li><a href="map.html" class="nav-item">Nous Trouver</a></li>
+        </ul>
+        <div class="time-trackers">
+            <span id="real-time-clock">00:00:00</span>
+            <span id="page-stopwatch">00:00</span>
+        </div>
+    </nav>
+
+    <main>
+        <section class="team-header">
+            <h2>Notre Équipe</h2>
+            <button id="edit-mode-btn">Mode Édition</button>
+        </section>
+        <button id="add-member-btn" style="display: none;">+ Ajouter un membre</button>
+
+        <section id="team-container" class="team-grid">
+            <div class="team-card">
+                <div class="image-wrapper">
+                    <img src="DocImgs/profile.png" alt="Membre 1" class="member-photo">
+                    <div class="scratch-overlay"></div>
+                </div>
+                <h3 class="member-name">NOM profile</h3>
+                <p class="member-role">Développeur Front-End Logic</p>
+
+                <button class="delete-member-btn" style="display: none;">🗑️</button>
+            </div>
+
+            <div class="team-card">
+                <div class="image-wrapper">
+                    <img src="DocImgs/profile.png" alt="profile" class="member-photo">
+                    <div class="scratch-overlay"></div>
+                </div>
+                <h3 class="member-name">NOM profile</h3>
+                <p class="member-role">Architecte Structure & Animations</p>
+                <button class="delete-member-btn" style="display: none;">🗑️</button>
+            </div>
+
+
+            <div class="team-card">
+                <div class="image-wrapper">
+                    <img src="DocImgs/profile.png" alt="profile" class="member-photo">
+                    <div class="scratch-overlay"></div>
+                </div>
+                <h3 class="member-name">NOM profile</h3>
+                <p class="member-role">Ingénieur Données & API</p>
+                <button class="delete-member-btn" style="display: none;">🗑️</button>
+            </div>
+        </section>
+
+
+        <div id="member-modal" class="modal hidden">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <h2 id="modal-name">Nom du membre</h2>
+                <img id="modal-img" src="" alt="Photo détail">
+                <p id="modal-desc">Description détaillée des compétences...</p>
+            </div>
+        </div>
+    </main>
+
+
+    <footer>
+        <div class="footer-content">
+            <p>ISEN Yncréa Ouest - Campus de Nantes</p>
+            <p>Adresse : 35 Avenue du Champ de Manœuvres, 44470 Carquefou</p>
+            <p>Téléphone : <span id="school-phone" class="footer-link">+33 2 40 18 12 12</span></p>
+            <p>Email : <a href="mailto:maher.jridi@isen-ouest.yncrea.fr" class="footer-link">maher.jridi@isen-ouest.yncrea.fr</a></p>
+        </div>
+    </footer>
+
+
+<script src="js/scrypt.js"></script> 
+<script src="js/team.js"></script> 
+</body>
+
+</html>

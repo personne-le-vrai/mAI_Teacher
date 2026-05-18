@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mAI Teacher - Services</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/services.js" defer></script>
+</head>
+<body>
+    <div id="loader-overlay" class="hidden">
+        <div class="spinner"></div>
+    </div>
+
+    <nav id="main-nav">
+        <div class="logo">
+            <a href="index.html"><img src="DocImgs/Logo.png" alt="Logo mAI Teacher"></a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="nav-item">Accueil</a></li>
+            <li><a href="about.html" class="nav-item">À Propos</a></li>
+            <li><a href="services.html" class="nav-item active">Produits/Services</a></li>
+            <li><a href="team.html" class="nav-item">L'Équipe</a></li>
+            <li><a href="contact.html" class="nav-item">Contact</a></li>
+            <li><a href="map.html" class="nav-item">Nous Trouver</a></li>
+        </ul>
+        <div class="time-trackers">
+            <span id="real-time-clock">00:00:00</span>
+            <span id="page-stopwatch">00:00</span>
+        </div>
+    </nav>
+
+    <section id="selection">
+        <div class="filter-wrapper">
+            <label for="product-selector">Choisissez votre offre :</label>
+            <select id="product-selector" onchange="updateCard()">
+                <option value="free">mAI_Teacher Free</option>
+                <option value="plus">mAI_Teacher+</option>
+                <option value="premium">mAI_Teacher Premium</option>
+                <option value="videos">mAI_Teacher Vidéos</option>
+                <option value="tshort">mAI_T-short</option>
+            </select>
+        </div>
+    </section>
+
+    <main id="product">
+        <div id="productCard"></div>
+    </main>
+
+    <section id="merch-section">
+        <h2 class="section-title">Notre Boutique (Merch)</h2>
+        
+        <!-- Formulaire de filtrage -->
+        <div class="filter-form-container">
+            <form id="filter-form">
+                <input type="text" id="filter-name" placeholder="Rechercher un produit...">
+                
+                <select id="filter-category">
+                    <option value="all">Toutes les catégories</option>
+                    <option value="vêtement">Vêtements</option>
+                    <option value="accessoire">Accessoires</option>
+                </select>
+
+                <div class="price-range">
+                    <label for="filter-price">Prix max : <span id="price-val">30</span>€</label>
+                    <input type="range" id="filter-price" min="0" max="50" value="30">
+                </div>
+            </form>
+        </div>
+
+        <div id="merch-grid"></div>
+    </section>
+
+    <canvas id="subscribe" width="400" height="200" style="display:none;"></canvas>
+
+    <div id="scroll-to-top">
+        <button onclick="scrollToTop()">↑</button>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>ISEN Yncréa Ouest - Campus de Nantes</p>
+            <p>Adresse : 35 Avenue du Champ de Manœuvres, 44470 Carquefou</p>
+            <p>Téléphone : <span id="school-phone" class="footer-link">+33 2 40 18 12 12</span></p>
+            <p>Email : <a href="mailto:maher.jridi@isen-ouest.yncrea.fr" class="footer-link">maher.jridi@isen-ouest.yncrea.fr</a></p>
+        </div>
+    </footer>
+    <script src="js/scrypt.js"></script>
+</body>
+</html>

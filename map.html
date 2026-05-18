@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mAI Teacher - Nous Trouver</title>
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+</head>
+
+<body>
+    <div id="loader-overlay" class="hidden">
+        <div class="spinner"></div>
+    </div>
+    <nav id="main-nav">
+        <div class="logo">
+            <a href="index.html"><img src="DocImgs/Logo.png" alt="Logo mAI Teacher"></a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="nav-item">Accueil</a></li>
+            <li><a href="about.html" class="nav-item">À Propos</a></li>
+            <li><a href="services.html" class="nav-item">Produits/Services</a></li>
+            <li><a href="team.html" class="nav-item">L'Équipe</a></li>
+            <li><a href="contact.html" class="nav-item">Contact</a></li>
+            <li><a href="map.html" class="nav-item active">Nous Trouver</a></li>
+        </ul>
+        <div class="time-trackers">
+            <span id="real-time-clock">00:00:00</span>
+            <span id="page-stopwatch">00:00</span>
+        </div>
+    </nav>
+
+    <main>
+        <section class="presentation">
+            <h2>Météo des Campus ISEN</h2>
+            <p>Cliquez sur une carte météo pour calculer la distance GPS entre votre position et le campus ISEN de
+                Nantes (siège de notre startup).</p>
+
+            <div class="weather-section" id="weather-cards-container">
+            </div>
+
+            <div id="distance-info">
+                <h3>Calcul d'itinéraire GPS</h3>
+                <p id="gps-coords">Recherche de votre position en cours...</p>
+                <p id="gps-distance"></p>
+            </div>
+        </section>
+
+        <section class="presentation">
+            <h2>Plan d'accès (OpenStreetMap)</h2>
+            <div id="map-container"></div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>ISEN Yncréa Ouest - Campus de Nantes</p>
+            <p>Adresse : 35 Avenue du Champ de Manœuvres, 44470 Carquefou</p>
+            <p>Téléphone : <span id="school-phone" class="footer-link">+33 2 40 18 12 12</span></p>
+            <p>Email : <a href="mailto:maher.jridi@isen-ouest.yncrea.fr" class="footer-link">maher.jridi@isen-ouest.yncrea.fr</a></p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+    <script src="js/scrypt.js"></script>
+    <script src="js/map.js"></script>
+</body>
+
+</html>
